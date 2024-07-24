@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  name = 'Matheus Bertemes';
+  points = 0
+
+  increment(){
+    this.points = this.points + 1
+  }
+
+  decrement(){
+    this.points = this.points - 1
+  }
 }

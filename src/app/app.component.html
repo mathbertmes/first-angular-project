@@ -1,1 +1,10 @@
-<div [innerText]="name"></div>
+
+<div class="pageContainer">
+  <div class="mainContent">
+    <app-message [points]="points"></app-message>
+    <div class="buttonsContainer">
+      <app-decrement (decrement)="decrement()"></app-decrement>
+      <app-increment (increment)="increment()"></app-increment>
+  </div>
+  </div>
+</div>
